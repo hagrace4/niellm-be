@@ -38,7 +38,7 @@ app.use((req, res, next) => {
   // Set CORS headers
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://yourfrontenddomain.com"
+    "https://niellm-frontend.onrender.com"
   ); // Adjust as necessary
   res.setHeader(
     "Access-Control-Allow-Methods",
