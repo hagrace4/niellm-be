@@ -8,6 +8,7 @@ config();
 const app = express();
 //middlewares
 app.use(cors({ origin: "*", credentials: true }));
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 //remove it in production
