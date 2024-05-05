@@ -6,6 +6,13 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 config();
 const app = express();
+
+//debug
+app.use((req, res, next) => {
+  console.log("Received headers:", req.headers);
+  next();
+});
+
 //middlewares
 app.use(cors({ origin: "*", credentials: true }));
 app.use(cors(corsOptions));
